@@ -18,4 +18,11 @@ RSpec.describe ContactsController, type: :controller do
       end
     end
 
+  context "with invalid attributes" do
+    it "does not show a contact" do
+      post "show", contact: attributes_for(:invalid_contact)
+      except(Contact.count).to eq(0)
+    end
+  end
+
 end
