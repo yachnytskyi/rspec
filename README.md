@@ -23,9 +23,7 @@ storage/
 test/   
 tmp/   
 vendor/  
-.babelrc   
 .gitignore   
-.postcssrc.yml    
 .ruby-version   
 Gemfile   
 Gemfile.lock   
